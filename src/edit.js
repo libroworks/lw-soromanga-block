@@ -61,7 +61,7 @@ export default function Edit({ attributes, setAttributes, isSelected }) {
 						isPressed={!isPreview}
 						onClick={switchToHTML}
 					>
-						<span>HTML</span>
+						<span>SRC</span>
 					</ToolbarButton>
 					<ToolbarButton
 						className="components-tab-button"
@@ -79,6 +79,14 @@ export default function Edit({ attributes, setAttributes, isSelected }) {
 							<SandBox
 								html={attributes.message}
 							/>
+							{ /*	
+								An overlay is added when the block is not selected in order to register click events. 
+								Some browsers do not bubble up the clicks from the sandboxed iframe, which makes it 
+								difficult to reselect the block. 
+							*/ }
+							{!isSelected && (
+								<div className="block-library-html__preview-overlay"></div>
+							)}
 						</>
 					) : (
 							<PlainText
