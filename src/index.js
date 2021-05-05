@@ -25,7 +25,15 @@ import save from './save';
  *
  * @see https://developer.wordpress.org/block-editor/developers/block-api/#registering-a-block
  */
-registerBlockType( 'create-block/lw-soromanga-block', {
+registerBlockType('create-block/lw-soromanga-block', {
+	attributes: {
+		message: {
+			type: 'string',
+			source: 'text',
+			selector: 'div',
+			default: '',
+		}
+	},
 	/**
 	 * @see ./edit.js
 	 */
@@ -35,4 +43,4 @@ registerBlockType( 'create-block/lw-soromanga-block', {
 	 * @see ./save.js
 	 */
 	save,
-} );
+});

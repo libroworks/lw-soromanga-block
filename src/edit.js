@@ -4,6 +4,7 @@
  * @see https://developer.wordpress.org/block-editor/packages/packages-i18n/
  */
 import { __ } from '@wordpress/i18n';
+import { useState } from '@wordpress/element';
 
 /**
  * React hook that is used to mark the block wrapper element.
@@ -11,7 +12,18 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
  */
-import { useBlockProps } from '@wordpress/block-editor';
+import {
+	BlockControls,
+	PlainText,
+	useBlockProps
+} from '@wordpress/block-editor';
+
+import {
+	ToolbarButton,
+	ToolbarGroup,
+	Disabled,
+	SandBox,
+} from '@wordpress/components';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -29,13 +41,57 @@ import './editor.scss';
  *
  * @return {WPElement} Element to render.
  */
-export default function Edit() {
+export default function Edit({ attributes, setAttributes, isSelected }) {
+	const [isPreview, setIsPreview] = useState();
+
+	function switchToPreview() {
+		setIsPreview(true);
+	}
+
+	function switchToHTML() {
+		setIsPreview(false);
+	}
+
 	return (
-		<p { ...useBlockProps() }>
-			{ __(
-				'Lw Soromanga Block – hello from the editor!',
-				'lw-soromanga-block'
-			) }
-		</p>
+		<div {...useBlockProps()}>
+			<BlockControls>
+				<ToolbarGroup>
+					<ToolbarButton
+						className="components-tab-button"
+						isPressed={!isPreview}
+						onClick={switchToHTML}
+					>
+						<span>HTML</span>
+					</ToolbarButton>
+					<ToolbarButton
+						className="components-tab-button"
+						isPressed={isPreview}
+						onClick={switchToPreview}
+					>
+						<span>Preview</span>
+					</ToolbarButton>
+				</ToolbarGroup>
+			</BlockControls>
+			<Disabled.Consumer>
+				{(isDisabled) =>
+					isPreview || isDisabled ? (
+						<>
+							<SandBox
+								html={attributes.message}
+							/>
+						</>
+					) : (
+							<PlainText
+								value={attributes.message}
+								onChange={(message) =>
+									setAttributes({ message })
+								}
+								placeholder={__('Write Text')}
+								aria-label={__('HTML')}
+							/>
+						)
+				}
+			</Disabled.Consumer>
+		</div>
 	);
 }
