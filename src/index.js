@@ -29,10 +29,16 @@ registerBlockType('create-block/lw-soromanga-block', {
 	attributes: {
 		message: {
 			type: 'string',
-			source: 'text',
+			source: 'attribute',
 			selector: 'div',
-			default: '',
-		}
+			attribute: 'message',
+			default: '@センセ「kohon',
+		},
+		renderedhtml: {
+			type: 'string',
+			source: 'html',
+			default: '<p>＊＊＊</p>',
+		},
 	},
 	/**
 	 * @see ./edit.js

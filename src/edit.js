@@ -15,7 +15,9 @@ import { useState } from '@wordpress/element';
 import {
 	BlockControls,
 	PlainText,
-	useBlockProps
+	useBlockProps,
+	transformStyles,
+	store as blockEditorStore,
 } from '@wordpress/block-editor';
 
 import {
@@ -24,6 +26,8 @@ import {
 	Disabled,
 	SandBox,
 } from '@wordpress/components';
+
+import { useSelect } from '@wordpress/data';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -43,6 +47,27 @@ import './editor.scss';
  */
 export default function Edit({ attributes, setAttributes, isSelected }) {
 	const [isPreview, setIsPreview] = useState();
+
+	const styles = useSelect((select) => {
+		// Default styles used to unset some of the styles
+		// that might be inherited from the editor style.
+		const defaultStyles = `
+			html,body,:root {
+				margin: 0 !important;
+				padding: 0 !important;
+				overflow: visible !important;
+				min-height: auto !important;
+			}
+		`;
+
+		return [
+			defaultStyles,
+			...transformStyles(
+				select(blockEditorStore).getSettings().styles
+			),
+		];
+	}, []);
+
 
 	function switchToPreview() {
 		setIsPreview(true);
@@ -77,7 +102,7 @@ export default function Edit({ attributes, setAttributes, isSelected }) {
 					isPreview || isDisabled ? (
 						<>
 							<SandBox
-								html={attributes.message}
+								html={attributes.renderedhtml}
 							/>
 							{ /*	
 								An overlay is added when the block is not selected in order to register click events. 
@@ -89,15 +114,15 @@ export default function Edit({ attributes, setAttributes, isSelected }) {
 							)}
 						</>
 					) : (
-							<PlainText
-								value={attributes.message}
-								onChange={(message) =>
-									setAttributes({ message })
-								}
-								placeholder={__('Write Text')}
-								aria-label={__('HTML')}
-							/>
-						)
+						<PlainText
+							value={attributes.message}
+							onChange={(val) =>
+								setAttributes({ message: val, renderedhtml: '<span>' + val + '＊＊＊</span>' })
+							}
+							placeholder={__('Write Text')}
+							aria-label={__('HTML')}
+						/>
+					)
 				}
 			</Disabled.Consumer>
 		</div>

@@ -25,8 +25,13 @@ import { RawHTML } from '@wordpress/element';
  */
 export default function save({ attributes }) {
 	return (
-		<div {...useBlockProps.save()}>
-			{attributes.message}
+		<div
+			{...useBlockProps.save()}
+			message={attributes.message}
+		>
+			<RawHTML>
+				{attributes.renderedhtml}
+			</RawHTML>
 		</div>
 	);
 }
