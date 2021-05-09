@@ -16,58 +16,78 @@
 
 $replacelist = [
 	[
-		"f" => "===[=]*",
-		"r" => "<div class=\"container\">"
+		"f" => "/===[=]*/u",
+		"r" => '<div class="manga_container">'
 	],
 	[
-		"f" => "@divend",
-		"r" => "<\/div>"
+		"f" => "/@divend/u",
+		"r" => "</div>"
 	],
 	[
-		"f" => "@frame:([a-z|0-9 ]+)",
-		"r" => "<div class=\"frame $1\"><div class=\"serif\">"
+		"f" => "/@frame:([a-z|0-9 ]+)/u",
+		"r" => '<div class="frame $1"><div class="serif">'
 	],
 	[
-		"f" => "@fend",
-		"r" => "<\/div><\/div>"
+		"f" => "/@fend/u",
+		"r" => "</div></div>"
 	],
 	[
-		"f" => "@センセ「([a-z|0-9 ]+)",
-		"r" => "@「alice $1"
-	],
-	[
-		"f" => "@セイト「([a-z|0-9 ]+)",
+		"f" => "/@センセ「([a-z|0-9 ]+)/u",
 		"r" => "@「yuki $1"
 	],
 	[
-		"f" => "@「([a-z|0-9 ]+)",
-		"r" => "<div class=\"frame $1\"><div class=\"serif\">"
+		"f" => "/@デシ「([a-z|0-9 ]+)/u",
+		"r" => "@「alice $1"
 	],
 	[
-		"f" => "@」",
-		"r" => "<\/div><\/div>"
+		"f" => "/@「([a-z|0-9 ]+)/u",
+		"r" => '<div class="frame $1"><div class="serif">'
 	],
 	[
-		"f" => "〘",
+		"f" => "/@」/u",
+		"r" => "</div></div>"
+	],
+	[
+		"f" => "/〘/u",
 		"r" => "<kbd>"
 	],
 	[
-		 "f" => "〙",
-		 "r" => "<\/kbd>"
+		 "f" => "/〙/u",
+		 "r" => "</kbd>"
 	],
-	[
-		"f" => "$＃",
-		"r" => "<p class=\"serif2\">"
-	],
-	[
-		"f" => "$【センセ([^】]+)】",
-		"r" => "<p class=\"kaiwa yuki $1\"><span class=\"kaiwaborder\">"
-	],
-	[
-		"f" => "$【セイト([^】]+)】",
-		"r" => "<p class=\"kaiwa alice $1\"><span class=\"kaiwaborder\">"
-	]
+	// [
+	// 	"f" => "/$＃/u",
+	// 	"r" => "<p class=\"serif2\">"
+	// ],
+	// [
+	// 	"f" => "/【センセ([^】]+)】/u",
+	// 	"r" => '<p class="kaiwa yuki $1"><span class="kaiwaborder">'
+	// ],
+	// [
+	// 	"f" => "/【デシ([^】]+)】/u",
+	// 	"r" => '<p class="kaiwa alice $1"><span class="kaiwaborder">'
+	// ]
 ];
+
+function render_manga($attributes, $content, $block ){
+	global $replacelist;
+	$testresult = '';
+	$error_flag = false;
+	foreach($replacelist as $line){
+		$result = preg_replace($line['f'], $line['r'], $content);
+		if($result != null){
+			$content = $result;
+		} else {
+			$error_flag = true;
+			$testresult = $testresult . $line['f'] . $line['r'] . '<br>';
+		}
+	}
+	if($error_flag == false){
+		return $content;
+	} else {
+		return $content . 'Error<br>' . $testresult;
+	}
+}
 
 
 /**
@@ -79,9 +99,7 @@ $replacelist = [
  */
 function create_block_lw_soromanga_block_block_init() {
 	register_block_type_from_metadata( __DIR__ ,array(
-		'render_callback' =>function($attributes, $content, $block ){
-			return 'test';//$content;
-		}
+		'render_callback' => 'render_manga'
 	));
 }
 add_action( 'init', 'create_block_lw_soromanga_block_block_init' );
