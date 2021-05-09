@@ -102,7 +102,7 @@ export default function Edit({ attributes, setAttributes, isSelected }) {
 					isPreview || isDisabled ? (
 						<>
 							<SandBox
-								html={attributes.renderedhtml}
+								html={attributes.message}
 							/>
 							{ /*	
 								An overlay is added when the block is not selected in order to register click events. 
@@ -117,7 +117,7 @@ export default function Edit({ attributes, setAttributes, isSelected }) {
 						<PlainText
 							value={attributes.message}
 							onChange={(val) =>
-								setAttributes({ message: val, renderedhtml: '<span>' + val + '＊＊＊</span>' })
+								setAttributes({ message: val })
 							}
 							placeholder={__('Write Text')}
 							aria-label={__('HTML')}

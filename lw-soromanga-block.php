@@ -13,6 +13,63 @@
  * @package           create-block
  */
 
+
+$replacelist = [
+	[
+		"f" => "===[=]*",
+		"r" => "<div class=\"container\">"
+	],
+	[
+		"f" => "@divend",
+		"r" => "<\/div>"
+	],
+	[
+		"f" => "@frame:([a-z|0-9 ]+)",
+		"r" => "<div class=\"frame $1\"><div class=\"serif\">"
+	],
+	[
+		"f" => "@fend",
+		"r" => "<\/div><\/div>"
+	],
+	[
+		"f" => "@センセ「([a-z|0-9 ]+)",
+		"r" => "@「alice $1"
+	],
+	[
+		"f" => "@セイト「([a-z|0-9 ]+)",
+		"r" => "@「yuki $1"
+	],
+	[
+		"f" => "@「([a-z|0-9 ]+)",
+		"r" => "<div class=\"frame $1\"><div class=\"serif\">"
+	],
+	[
+		"f" => "@」",
+		"r" => "<\/div><\/div>"
+	],
+	[
+		"f" => "〘",
+		"r" => "<kbd>"
+	],
+	[
+		 "f" => "〙",
+		 "r" => "<\/kbd>"
+	],
+	[
+		"f" => "$＃",
+		"r" => "<p class=\"serif2\">"
+	],
+	[
+		"f" => "$【センセ([^】]+)】",
+		"r" => "<p class=\"kaiwa yuki $1\"><span class=\"kaiwaborder\">"
+	],
+	[
+		"f" => "$【セイト([^】]+)】",
+		"r" => "<p class=\"kaiwa alice $1\"><span class=\"kaiwaborder\">"
+	]
+];
+
+
 /**
  * Registers the block using the metadata loaded from the `block.json` file.
  * Behind the scenes, it registers also all assets so they can be enqueued
@@ -21,6 +78,10 @@
  * @see https://developer.wordpress.org/block-editor/tutorials/block-tutorial/writing-your-first-block-type/
  */
 function create_block_lw_soromanga_block_block_init() {
-	register_block_type_from_metadata( __DIR__ );
+	register_block_type_from_metadata( __DIR__ ,array(
+		'render_callback' =>function($attributes, $content, $block ){
+			return 'test';//$content;
+		}
+	));
 }
 add_action( 'init', 'create_block_lw_soromanga_block_block_init' );

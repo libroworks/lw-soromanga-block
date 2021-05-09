@@ -27,11 +27,8 @@ export default function save({ attributes }) {
 	return (
 		<div
 			{...useBlockProps.save()}
-			message={attributes.message}
 		>
-			<RawHTML>
-				{attributes.renderedhtml}
-			</RawHTML>
+			{attributes.message}
 		</div>
 	);
 }
