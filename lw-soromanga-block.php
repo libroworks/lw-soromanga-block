@@ -59,29 +59,33 @@ $replacelist = [
 	// 	"f" => "/$＃/u",
 	// 	"r" => "<p class=\"serif2\">"
 	// ],
-	// [
-	// 	"f" => "/【センセ([^】]+)】/u",
-	// 	"r" => '<p class="kaiwa yuki $1"><span class="kaiwaborder">'
-	// ],
-	// [
-	// 	"f" => "/【デシ([^】]+)】/u",
-	// 	"r" => '<p class="kaiwa alice $1"><span class="kaiwaborder">'
-	// ]
+	[
+		"f" => "/【センセ(.*?)】(.*)/u",
+		"r" => '<p class="kaiwa yuki $1"><span class="kaiwaborder">$2</span></p>'
+	],
+	[
+		"f" => "/【デシ(.*?)】(.*)/u",
+		"r" => '<p class="kaiwa alice $1"><span class="kaiwaborder">$2</span></p>'
+	],
 ];
 
 function render_manga($attributes, $content, $block ){
 	global $replacelist;
+	// 改行で分割
+	$content = str_replace(["\r\n", "\r", "\n"], "\n", $content);
+	$lcontent = explode("\n", $content);
 	$testresult = '';
 	$error_flag = false;
 	foreach($replacelist as $line){
-		$result = preg_replace($line['f'], $line['r'], $content);
+		$result = preg_replace($line['f'], $line['r'], $lcontent);
 		if($result != null){
-			$content = $result;
+			$lcontent = $result;
 		} else {
 			$error_flag = true;
 			$testresult = $testresult . $line['f'] . $line['r'] . '<br>';
 		}
 	}
+	$content = implode("\n", $lcontent);
 	if($error_flag == false){
 		return $content;
 	} else {
