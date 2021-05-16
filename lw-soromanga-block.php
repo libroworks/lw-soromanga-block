@@ -17,7 +17,7 @@
 $replacelist = [
 	[
 		"f" => "/===[=]*/u",
-		"r" => '<div class="manga_container">'
+		"r" => '<div class="soromanga_container">'
 	],
 	[
 		"f" => "/@divend/u",

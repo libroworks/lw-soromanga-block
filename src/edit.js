@@ -73,7 +73,7 @@ export default function Edit({ attributes, setAttributes, isSelected }) {
 		const replist = [
 			{
 				"f": "===[=]*",
-				"r": '<div class="manga_container">'
+				"r": '<div class="soromanga_container">'
 			},
 			{
 				"f": "@divend",

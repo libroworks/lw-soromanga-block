@@ -2,9 +2,9 @@
 /* マンガ部分関係のCSS
 （会社WordPress用にカスタム） */
 
-.wp-block-create-block-lw-soromangablock{
-    width: 117mm;
-    margin: 4mm auto;
+.wp-block-create-block-lw-soromanga-block{
+    width: 531px;
+    margin: 18px auto;
 }
 
 /* コマのコンテナ */
@@ -19,12 +19,12 @@
     align-items: flex-end;
     /*縦に伸ばさない*/
     flex-wrap: wrap;
-    /* margin: 4mm auto; */
-    margin-bottom: 8mm;
+    /* margin: 18px auto; */
+    margin-bottom: 36px;
     justify-content: space-between;
-    font-size: 13q;
-    line-height: 20q;
-    width: 117mm;
+    font-size: 15px;
+    line-height: 23px;
+    width: 531px;
 
     /* transform-origin: top; */
     /* transform: scale(1.2); */
@@ -36,7 +36,7 @@
     /* .soromanga_container{
         transform-origin: top;
         transform: scale(1.2);
-        margin-bottom: 24mm;
+        margin-bottom: 109px;
     }
 } */
 /* @media screen and (max-width:420px) { */
@@ -45,7 +45,7 @@
         transform-origin: left top;
         transform: scale(0.7); */
         /* width: 100%; */
-        /* margin-bottom: -28mm;
+        /* margin-bottom: -127px;
     }
 } */
 
@@ -60,22 +60,22 @@
 /* コマ */
 /* 標準サイズ1/2 */
 .soromanga_container .frame{
-    width: 57mm;
-    border:solid 0.5mm #555;
-    margin-bottom: 3.5mm;
-    height: 46mm;
+    width: 259px;
+    border:solid 2px #555;
+    margin-bottom: 16px;
+    height: 209px;
     position: relative;
-    font-size: 13q;
-    line-height: 20q;
+    font-size: 15px;
+    line-height: 23px;
 }
 /* スリムサイズ1/3 */
 .soromanga_container .fslim{
-    width: 37mm;
+    width: 168px;
 }
 /* ワイドサイズ2/3 */
 .soromanga_container .fwide{
-    width: 76.5mm;
-    /* width: 77mm; */
+    width: 347px;
+    /* width: 349px; */
 }
 /* フルサイズ3/3 */
 .soromanga_container .ffull{
@@ -91,173 +91,173 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .back002{
+.wp-block-create-block-lw-soromanga-block .back002{
     background: url("img/manga_back/back002.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .back003{
+.wp-block-create-block-lw-soromanga-block .back003{
     background: url("img/manga_back/back003.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .back004{
+.wp-block-create-block-lw-soromanga-block .back004{
     background: url("img/manga_back/back004.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .back005{
+.wp-block-create-block-lw-soromanga-block .back005{
     background: url("img/manga_back/back005.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .back006{
+.wp-block-create-block-lw-soromanga-block .back006{
     background: url("img/manga_back/back006.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .back007{
+.wp-block-create-block-lw-soromanga-block .back007{
     background: url("img/manga_back/back007.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
-.wp-block-create-block-lw-soromangablock .back008{
+.wp-block-create-block-lw-soromanga-block .back008{
     background: url("img/manga_back/back008.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .back009{
+.wp-block-create-block-lw-soromanga-block .back009{
     background: url("img/manga_back/back009.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .back010{
+.wp-block-create-block-lw-soromanga-block .back010{
     background: url("img/manga_back/back010.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .back011{
+.wp-block-create-block-lw-soromanga-block .back011{
     background: url("img/manga_back/back011.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .back012{
+.wp-block-create-block-lw-soromanga-block .back012{
     background: url("img/manga_back/back012.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .back013{
+.wp-block-create-block-lw-soromanga-block .back013{
     background: url("img/manga_back/back013.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .back014{
+.wp-block-create-block-lw-soromanga-block .back014{
     background: url("img/manga_back/back014.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .back015{
+.wp-block-create-block-lw-soromanga-block .back015{
     background: url("img/manga_back/back015.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .fslim.back001{
+.wp-block-create-block-lw-soromanga-block .fslim.back001{
     background: url("img/manga_back/back001slim.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .fslim.back002{
+.wp-block-create-block-lw-soromanga-block .fslim.back002{
     background: url("img/manga_back/back002slim.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .fslim.back003{
+.wp-block-create-block-lw-soromanga-block .fslim.back003{
     background: url("img/manga_back/back003slim.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .fslim.back004{
+.wp-block-create-block-lw-soromanga-block .fslim.back004{
     background: url("img/manga_back/back004slim.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .fslim.back005{
+.wp-block-create-block-lw-soromanga-block .fslim.back005{
     background: url("img/manga_back/back005slim.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .fslim.back006{
+.wp-block-create-block-lw-soromanga-block .fslim.back006{
     background: url("img/manga_back/back006slim.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .fslim.back007{
+.wp-block-create-block-lw-soromanga-block .fslim.back007{
     background: url("img/manga_back/back007slim.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
-.wp-block-create-block-lw-soromangablock .fslim.back008{
+.wp-block-create-block-lw-soromanga-block .fslim.back008{
     background: url("img/manga_back/back008slim.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .fslim.back009{
+.wp-block-create-block-lw-soromanga-block .fslim.back009{
     background: url("img/manga_back/back009slim.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .fslim.back010{
+.wp-block-create-block-lw-soromanga-block .fslim.back010{
     background: url("img/manga_back/back010slim.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .fslim.back011{
+.wp-block-create-block-lw-soromanga-block .fslim.back011{
     background: url("img/manga_back/back011slim.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .fslim.back012{
+.wp-block-create-block-lw-soromanga-block .fslim.back012{
     background: url("img/manga_back/back012slim.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .fslim.back013{
+.wp-block-create-block-lw-soromanga-block .fslim.back013{
     background: url("img/manga_back/back013slim.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .fslim.back014{
+.wp-block-create-block-lw-soromanga-block .fslim.back014{
     background: url("img/manga_back/back014slim.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.wp-block-create-block-lw-soromangablock .fslim.back015{
+.wp-block-create-block-lw-soromanga-block .fslim.back015{
     background: url("img/manga_back/back015slim.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -268,562 +268,562 @@
 /* キャラクター */
 
 
-.wp-block-create-block-lw-soromangablock .frame.namida::after{
+.wp-block-create-block-lw-soromanga-block .frame.namida::after{
     content: "";
     background: url("img/manga_chara/chara1-1.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 37mm;
-    height: 37mm;
+    width: 168px;
+    height: 168px;
     position: absolute;
     bottom:0;
     left:0;
 }
-.wp-block-create-block-lw-soromangablock .frame.shibu::after{
+.wp-block-create-block-lw-soromanga-block .frame.shibu::after{
     content: "";
     background: url("img/manga_chara/chara1-2.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 37mm;
-    height: 37mm;
+    width: 168px;
+    height: 168px;
     position: absolute;
     bottom:0;
     left:0;
 }
-.wp-block-create-block-lw-soromangablock .frame.hatena::after{
+.wp-block-create-block-lw-soromanga-block .frame.hatena::after{
     content: "";
     background: url("img/manga_chara/chara1-3.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 37mm;
-    height: 37mm;
+    width: 168px;
+    height: 168px;
     position: absolute;
     bottom:0;
     left:0;
 }
-.wp-block-create-block-lw-soromangablock .frame.gyao::after{
+.wp-block-create-block-lw-soromanga-block .frame.gyao::after{
     content: "";
     background: url("img/manga_chara/chara1-4.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 37mm;
-    height: 37mm;
+    width: 168px;
+    height: 168px;
     position: absolute;
     bottom:0;
     left:0;
 }
-.wp-block-create-block-lw-soromangablock .frame.doya::after{
+.wp-block-create-block-lw-soromanga-block .frame.doya::after{
     content: "";
     background: url("img/manga_chara/chara1-5.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 37mm;
-    height: 37mm;
+    width: 168px;
+    height: 168px;
     position: absolute;
     bottom:0;
     left:0;
 }
-.wp-block-create-block-lw-soromangablock .frame.fuan::after{
+.wp-block-create-block-lw-soromanga-block .frame.fuan::after{
     content: "";
     background: url("img/manga_chara/chara1-6.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 37mm;
-    height: 37mm;
+    width: 168px;
+    height: 168px;
     position: absolute;
     bottom:0;
     left:0;
 }
-.wp-block-create-block-lw-soromangablock .frame.yatta::after{
+.wp-block-create-block-lw-soromanga-block .frame.yatta::after{
     content: "";
     background: url("img/manga_chara/chara1-7.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 37mm;
-    height: 37mm;
+    width: 168px;
+    height: 168px;
     position: absolute;
     bottom:0;
     left:0;
 }
-.wp-block-create-block-lw-soromangablock .frame.sumashi::after{
+.wp-block-create-block-lw-soromanga-block .frame.sumashi::after{
     content: "";
     background: url("img/manga_chara/chara1-8.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 37mm;
-    height: 37mm;
+    width: 168px;
+    height: 168px;
     position: absolute;
     bottom:0;
     left:0;
 }
 
 /* 雪表情 */
-.wp-block-create-block-lw-soromangablock .frame.jito::after{
+.wp-block-create-block-lw-soromanga-block .frame.jito::after{
     content: "";
     background: url("img/manga_chara/chara2-1.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 37mm;
-    height: 37mm;
+    width: 168px;
+    height: 168px;
     position: absolute;
     bottom:0;
-    right:-2mm;
+    right:-9px;
 }
-.wp-block-create-block-lw-soromangablock .frame.shock::after{
+.wp-block-create-block-lw-soromanga-block .frame.shock::after{
     content: "";
     background: url("img/manga_chara/chara2-2.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 37mm;
-    height: 37mm;
+    width: 168px;
+    height: 168px;
     position: absolute;
     bottom:0;
-    right:-2mm;
+    right:-9px;
 }
-.wp-block-create-block-lw-soromangablock .frame.anone::after{
+.wp-block-create-block-lw-soromanga-block .frame.anone::after{
     content: "";
     background: url("img/manga_chara/chara2-3.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 37mm;
-    height: 37mm;
+    width: 168px;
+    height: 168px;
     position: absolute;
     bottom:0;
-    right:-2mm;
+    right:-9px;
 }
-.wp-block-create-block-lw-soromangablock .frame.kohon::after{
+.wp-block-create-block-lw-soromanga-block .frame.kohon::after{
     content: "";
     background: url("img/manga_chara/chara2-4.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 37mm;
-    height: 37mm;
+    width: 168px;
+    height: 168px;
     position: absolute;
     bottom:0;
-    right:-2mm;
+    right:-9px;
 }
-.wp-block-create-block-lw-soromangablock .frame.gohoubi::after{
+.wp-block-create-block-lw-soromanga-block .frame.gohoubi::after{
     content: "";
     background: url("img/manga_chara/chara2-5.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 37mm;
-    height: 37mm;
+    width: 168px;
+    height: 168px;
     position: absolute;
     bottom:0;
-    right:-2mm;
+    right:-9px;
 }
-.wp-block-create-block-lw-soromangablock .frame.iyada::after{
+.wp-block-create-block-lw-soromanga-block .frame.iyada::after{
     content: "";
     background: url("img/manga_chara/chara2-6.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 37mm;
-    height: 37mm;
+    width: 168px;
+    height: 168px;
     position: absolute;
     bottom:0;
-    right:-2mm;
+    right:-9px;
 }
-.wp-block-create-block-lw-soromangablock .frame.soreda::after{
+.wp-block-create-block-lw-soromanga-block .frame.soreda::after{
     content: "";
     background: url("img/manga_chara/chara2-7.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 37mm;
-    height: 37mm;
+    width: 168px;
+    height: 168px;
     position: absolute;
     bottom:0;
-    right:-2mm;
+    right:-9px;
 }
-.wp-block-create-block-lw-soromangablock .frame.desuyo::after{
+.wp-block-create-block-lw-soromanga-block .frame.desuyo::after{
     content: "";
     background: url("img/manga_chara/chara2-8.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 37mm;
-    height: 37mm;
+    width: 168px;
+    height: 168px;
     position: absolute;
     bottom:0;
-    right:-2mm;
+    right:-9px;
 }
 
 
-.wp-block-create-block-lw-soromangablock .starting::after{
+.wp-block-create-block-lw-soromanga-block .starting::after{
     content: "";
     background: url("img/manga_chara/chara-start.png");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 76.5mm;
-    height: 46mm;
+    width: 347px;
+    height: 209px;
     position: absolute;
     bottom:0;
     left:0;
 }
-.wp-block-create-block-lw-soromangablock .starting{
+.wp-block-create-block-lw-soromanga-block .starting{
     background: url("img/manga_chara/chara-start-back.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.wp-block-create-block-lw-soromangablock .frame.centering::after{
-    left:10mm;
+.wp-block-create-block-lw-soromanga-block .frame.centering::after{
+    left:45px;
 }
-.wp-block-create-block-lw-soromangablock .fwide.centering::after{
-    left:20mm;
+.wp-block-create-block-lw-soromanga-block .fwide.centering::after{
+    left:91px;
 }
 
 /* 吹き出しとセリフ */
-.wp-block-create-block-lw-soromangablock .serif{
+.wp-block-create-block-lw-soromanga-block .serif{
     overflow: visible;
     text-align: center;
     width: 100%;
     font-family: notosans-r;
     font-feature-settings: "palt" 1;
 }
-.wp-block-create-block-lw-soromangablock .serif p{
-    font-size: 13q;
-    line-height: 20q;
+.wp-block-create-block-lw-soromanga-block .serif p{
+    font-size: 15px;
+    line-height: 23px;
     font-family: notosans-r;
 }
-.wp-block-create-block-lw-soromangablock .frame .serif{
-    border-bottom: solid 0.5mm #888;
+.wp-block-create-block-lw-soromanga-block .frame .serif{
+    border-bottom: solid 2px #888;
     border-radius: 0 0 40% 40%;
     background: #FFF;
     margin:auto;
     position: absolute;
-    width: 56mm;
-    top: 0.01mm;
-    right: 0.01mm;
-    padding: 1.5mm 2.5mm 3mm 2.5mm;
+    width: 254px;
+    top: 0px;
+    right: 0px;
+    padding: 7px 11px 14px 11px;
 }
-.wp-block-create-block-lw-soromangablock .fslim .serif{
-    width: 36mm;
+.wp-block-create-block-lw-soromanga-block .fslim .serif{
+    width: 163px;
 }
-.wp-block-create-block-lw-soromangablock .fwide .serif{
-    width: 75.5mm;
+.wp-block-create-block-lw-soromanga-block .fwide .serif{
+    width: 342px;
 }
-.wp-block-create-block-lw-soromangablock .ffull .serif{
-    width: 116.2mm;
+.wp-block-create-block-lw-soromanga-block .ffull .serif{
+    width: 527px;
 }
 
 /* 吹き出しのシッポ */
-.wp-block-create-block-lw-soromangablock .ffull .serif::after{
+.wp-block-create-block-lw-soromanga-block .ffull .serif::after{
   position: absolute;
   content: url("img/3frame_fukidasi_r.svg");
-  width: 5mm;
-  height: 5mm;
-  bottom: -4mm;
+  width: 23px;
+  height: 23px;
+  bottom: -18px;
   right: 33%;
 }
 /* 雪のシッポ */
-.wp-block-create-block-lw-soromangablock .fwide .serif::after, .yuki .serif::after{
+.wp-block-create-block-lw-soromanga-block .fwide .serif::after, .yuki .serif::after{
   position: absolute;
   content: url("img/3frame_fukidasi_r.svg");
-  width: 5mm;
-  height: 5mm;
-  bottom: -4mm;
+  width: 23px;
+  height: 23px;
+  bottom: -18px;
   right: 50%;
 }
 
 
 /* アリスのシッポ */
-.wp-block-create-block-lw-soromangablock .fwide.alice .serif::after, .alice .serif::after {
+.wp-block-create-block-lw-soromanga-block .fwide.alice .serif::after, .alice .serif::after {
   position: absolute;
   content: url("img/3frame_fukidasi_l.svg");
-  width: 5mm;
-  height: 5mm;
-  bottom: -4mm;
+  width: 23px;
+  height: 23px;
+  bottom: -18px;
   right: 50%;
 }
-.wp-block-create-block-lw-soromangablock .ffull.alice .serif::after{
+.wp-block-create-block-lw-soromanga-block .ffull.alice .serif::after{
     position: absolute;
     content: url("img/3frame_fukidasi_l.svg");
-    width: 5mm;
-    height: 5mm;
-    bottom: -4mm;
+    width: 23px;
+    height: 23px;
+    bottom: -18px;
     right: 65%;
 }
 
 /* 幅が狭い場合のシッポ */
-.wp-block-create-block-lw-soromangablock .fslim .serif::after{
+.wp-block-create-block-lw-soromanga-block .fslim .serif::after{
     position: absolute;
     content: url("img/3frame_fukidasi_c.svg");
-    width: 5mm;
-    height: 5mm;
-    bottom: -4.5mm;
+    width: 23px;
+    height: 23px;
+    bottom: -20px;
     right: 40%;
 }
-.wp-block-create-block-lw-soromangablock .centering .serif::after{
+.wp-block-create-block-lw-soromanga-block .centering .serif::after{
     position: absolute;
     content: url("img/3frame_fukidasi_c.svg");
-    width: 5mm;
-    height: 5mm;
-    bottom: -4.5mm;
+    width: 23px;
+    height: 23px;
+    bottom: -20px;
     right: 45%;
 }
-.wp-block-create-block-lw-soromangablock .blank.fslim .serif::after{
+.wp-block-create-block-lw-soromanga-block .blank.fslim .serif::after{
     content: none;
 }
 
-.wp-block-create-block-lw-soromangablock .blank{
+.wp-block-create-block-lw-soromanga-block .blank{
     border: none;
 }
-.wp-block-create-block-lw-soromangablock .blank .serif{
+.wp-block-create-block-lw-soromanga-block .blank .serif{
     border: none;
 }
 
-.wp-block-create-block-lw-soromangablock .starting .serif{
+.wp-block-create-block-lw-soromanga-block .starting .serif{
     width: 70%;
     left:0;
     margin:0;
     overflow: visible;
-    padding: 1.5mm;
-    border-left: solid 0.5mm #888;
-    border-right: solid 0.5mm #888;
+    padding: 7px;
+    border-left: solid 2px #888;
+    border-right: solid 2px #888;
     border-radius: 50% 50% 50% 50%;
 }
-.wp-block-create-block-lw-soromangablock .serif2{
+.wp-block-create-block-lw-soromanga-block .serif2{
     position: absolute;
-    top: 25mm;
-    left: 33mm;
+    top: 113px;
+    left: 150px;
     right:auto;
     max-width: 12em;
     border: none;
     text-indent: 0;
     text-align: left;
     color: #000;
-    text-shadow:  #FFF 0.1mm 0mm 0.5mm;
+    text-shadow:  #FFF 0px 0px 2px;
 }
-.wp-block-create-block-lw-soromangablock .starting .serif::after{
+.wp-block-create-block-lw-soromanga-block .starting .serif::after{
   position: absolute;
   content: url("img/3frame_fukidasi_l.svg");
-  width: 5mm;
-  height: 5mm;
-  bottom: -4mm;
+  width: 23px;
+  height: 23px;
+  bottom: -18px;
   right: 33%;
 }
 
-.wp-block-create-block-lw-soromangablock .frame.yuki .serif2{
+.wp-block-create-block-lw-soromanga-block .frame.yuki .serif2{
     left: auto;
-    right: 30mm;
+    right: 136px;
     text-align: right;
 }
-.wp-block-create-block-lw-soromangablock .starting .serif2{
+.wp-block-create-block-lw-soromanga-block .starting .serif2{
     position: absolute;
-    top: 3.5mm;
+    top: 16px;
     left:auto;
-    right:-23mm;
+    right:-104px;
     max-width: 12em;
-    border: solid 0.5mm #888;
+    border: solid 2px #888;
     border-radius: 50%;
-    padding: 2mm 3mm;
+    padding: 9px 14px;
     background: #FFF;
     text-indent: 0;
     text-align: center;
 }
-.wp-block-create-block-lw-soromangablock .starting .serif2::after{
+.wp-block-create-block-lw-soromanga-block .starting .serif2::after{
   position: absolute;
   content: url("img/3frame_fukidasi_l.svg");
-  width: 5mm;
-  height: 5mm;
-  bottom: -4mm;
+  width: 23px;
+  height: 23px;
+  bottom: -18px;
   right: 33%;
 }
 
 /* 1コマに2人 */
-.wp-block-create-block-lw-soromangablock .ffull::after{
+.wp-block-create-block-lw-soromanga-block .ffull::after{
     right:0;
 }
 
-.wp-block-create-block-lw-soromangablock .fleft{
+.wp-block-create-block-lw-soromanga-block .fleft{
     border:none;
     width: 0;
-    margin-right: -3.5mm;
+    margin-right: -16px;
 }
-.wp-block-create-block-lw-soromangablock .ffull+.fleft{
+.wp-block-create-block-lw-soromanga-block .ffull+.fleft{
     margin-right: 0;
 }
-.wp-block-create-block-lw-soromangablock .frame.fleft::after{
-    left: -116mm;
-    bottom: 0.5mm;
+.wp-block-create-block-lw-soromanga-block .frame.fleft::after{
+    left: -526px;
+    bottom: 2px;
 }
-.wp-block-create-block-lw-soromangablock .fleft .serif{
+.wp-block-create-block-lw-soromanga-block .fleft .serif{
     border: none;
     position: absolute;
-    width: 40mm;
-    height: 6mm;
-    top: 30mm;
-    left: -81mm;
+    width: 181px;
+    height: 27px;
+    top: 136px;
+    left: -367px;
     text-align: left;
     margin: 0;
     padding: 0;
     background: none;
-    text-shadow:  #FFF -0.1mm 0mm 0.5mm;
+    text-shadow:  #FFF -0px 0px 2px;
     z-index: 10;
 }
-.wp-block-create-block-lw-soromangablock .fleft .serif::after{
+.wp-block-create-block-lw-soromanga-block .fleft .serif::after{
     content: none;
 }
 
 /* fwideと組み合わせる場合の補正 */
-.wp-block-create-block-lw-soromangablock .fwide+.fleft::after{
-    left: -82.5mm;
+.wp-block-create-block-lw-soromanga-block .fwide+.fleft::after{
+    left: -374px;
 }
-.wp-block-create-block-lw-soromangablock .fwide+.fleft.sumashi::after{
-    left: -79.5mm;
+.wp-block-create-block-lw-soromanga-block .fwide+.fleft.sumashi::after{
+    left: -361px;
 }
 
-.wp-block-create-block-lw-soromangablock .fwide+.fleft .serif{
-    left: -49mm;
+.wp-block-create-block-lw-soromanga-block .fwide+.fleft .serif{
+    left: -222px;
 }
 
 /* 右に雪を配置 */
-.wp-block-create-block-lw-soromangablock .fright{
+.wp-block-create-block-lw-soromanga-block .fright{
     border:none;
     width: 0;
-    margin-right: -3.5mm;
+    margin-right: -16px;
 }
-.wp-block-create-block-lw-soromangablock .frame.fright::after{
+.wp-block-create-block-lw-soromanga-block .frame.fright::after{
     right: 0;
-    bottom: 0.5mm;
+    bottom: 2px;
 }
-.wp-block-create-block-lw-soromangablock .fright .serif{
+.wp-block-create-block-lw-soromanga-block .fright .serif{
     border: none;
     position: absolute;
-    width: 30mm;
-    height: 6mm;
-    top: 30mm;
-    right: 30mm;
+    width: 136px;
+    height: 27px;
+    top: 136px;
+    right: 136px;
     margin: 0;
     padding: 0;
     background: none;
     text-align: right;
-    text-shadow: #FFF 0.1mm 0mm 0.5mm;
+    text-shadow: #FFF 0px 0px 2px;
     z-index: 10;
 }
-.wp-block-create-block-lw-soromangablock .fright .serif::after{
+.wp-block-create-block-lw-soromanga-block .fright .serif::after{
     content: none;
 }
 
 /* コマを高くする */
-.wp-block-create-block-lw-soromangablock .ftall{
-    height: 54mm;
+.wp-block-create-block-lw-soromanga-block .ftall{
+    height: 245px;
 }
-.wp-block-create-block-lw-soromangablock .ftall7{
-    height: 73mm;
+.wp-block-create-block-lw-soromanga-block .ftall7{
+    height: 331px;
 }
-.wp-block-create-block-lw-soromangablock .ftall6{
-    height: 63mm;
+.wp-block-create-block-lw-soromanga-block .ftall6{
+    height: 286px;
 }
-.wp-block-create-block-lw-soromangablock .ftall40{
-    height: 40mm;
+.wp-block-create-block-lw-soromanga-block .ftall40{
+    height: 181px;
 }
-.wp-block-create-block-lw-soromangablock .ftall43{
-    height: 43mm;
+.wp-block-create-block-lw-soromanga-block .ftall43{
+    height: 195px;
 }
-.wp-block-create-block-lw-soromangablock .ftall48{
-    height: 48mm;
+.wp-block-create-block-lw-soromanga-block .ftall48{
+    height: 218px;
 }
 
 /* コマを低くする */
-.wp-block-create-block-lw-soromangablock .fshort{
-    height: 37mm;
+.wp-block-create-block-lw-soromanga-block .fshort{
+    height: 168px;
 }
 
 
 /* カンバン */
-.wp-block-create-block-lw-soromangablock .kanban{
-    width: 57mm;
-    padding: 7mm 3mm 3mm 3mm;
-    margin-bottom: 2mm;
-    height: 37mm;
+.wp-block-create-block-lw-soromanga-block .kanban{
+    width: 259px;
+    padding: 32px 14px 14px 14px;
+    margin-bottom: 9px;
+    height: 168px;
     position: relative;
-    border-radius: 2mm;
+    border-radius: 9px;
     text-align: justify;
     text-indent: 0;
-    font-size: 13q;
-    line-height: 20q;
+    font-size: 15px;
+    line-height: 23px;
     background: url("img/comic_regex_kanban.svg");
     background-clip: 100%;
     background-repeat: no-repeat;
     background-color: #e6e6e6;
-    background-size: auto 4.5mm;
-    background-position: center 1.5mm;
+    background-size: auto 20px;
+    background-position: center 7px;
 }
 /* .kanban h4{
-    font-size: 12q;
+    font-size: 14px;
     color: #FFF;
-    line-height: 16q;
+    line-height: 18px;
     letter-spacing: 1em;
     margin-top: 0;
-    margin-bottom: 1mm;
+    margin-bottom: 5px;
     text-align: center;
 } */
 /* .kanban h4::before{
   content: none;
 } */
 
-.wp-block-create-block-lw-soromangablock .kanban p{
+.wp-block-create-block-lw-soromanga-block .kanban p{
     text-indent: 0;
     text-align: justify;
-    font-size: 13q;
-    line-height: 20q;
+    font-size: 15px;
+    line-height: 23px;
 }
 
 /* spacer */
-.wp-block-create-block-lw-soromangablock .spacer{
+.wp-block-create-block-lw-soromanga-block .spacer{
     display: inline-block;
-    width: 6mm;
+    width: 27px;
 }
 
 /* マンガ内に画像を入れる */
-.wp-block-create-block-lw-soromangablock .inlinefigure{
+.wp-block-create-block-lw-soromanga-block .inlinefigure{
     position: absolute;
-    left:1mm;
+    left:5px;
 }
-.wp-block-create-block-lw-soromangablock .ifrshift{
-    margin-left: 30mm;
+.wp-block-create-block-lw-soromanga-block .ifrshift{
+    margin-left: 136px;
 }
-.wp-block-create-block-lw-soromangablock .ifrshift3{
-    margin-left: 3mm;
+.wp-block-create-block-lw-soromanga-block .ifrshift3{
+    margin-left: 14px;
 }
-.wp-block-create-block-lw-soromangablock .ifrshift15{
-    margin-left: 15mm;
+.wp-block-create-block-lw-soromanga-block .ifrshift15{
+    margin-left: 68px;
 }
 
-.wp-block-create-block-lw-soromangablock .serif code{
+.wp-block-create-block-lw-soromanga-block .serif code{
     font-family: inconsolata, "ＭＳ ゴシック";
 }
 
 /* セリフの左寄せ。セリフが非常に長いときに使う */
-.wp-block-create-block-lw-soromangablock .hidariyose .serif{
+.wp-block-create-block-lw-soromanga-block .hidariyose .serif{
     text-align: left;
 }
 
 /* セリフが短いので円形にする。コマ枠に対してセリフが短いときに使う */
-.wp-block-create-block-lw-soromangablock .ffull.serifshort .serif{
+.wp-block-create-block-lw-soromanga-block .ffull.serifshort .serif{
     width: 40%;
     right: 20%;
-    border: solid 0.5mm #888;
+    border: solid 2px #888;
     border-radius: 50%;
-    padding: 2mm;
-    margin-top: 2mm;
+    padding: 9px;
+    margin-top: 9px;
 }
-.wp-block-create-block-lw-soromangablock .ffull.serifshort .serif .inlinefigure{
-    left: -40mm;
+.wp-block-create-block-lw-soromanga-block .ffull.serifshort .serif .inlinefigure{
+    left: -181px;
 }
-.wp-block-create-block-lw-soromangablock .fslim.serifshort .serif{
+.wp-block-create-block-lw-soromanga-block .fslim.serifshort .serif{
     width: 90%;
-    right: 1.5mm;
-    top: 6mm;
-    border: solid 0.5mm #888;
+    right: 7px;
+    top: 27px;
+    border: solid 2px #888;
     border-radius: 50%;
-    padding: 3mm 2mm;
-    /* margin-top: 2mm; */
+    padding: 14px 9px;
+    /* margin-top: 9px; */
 }
 
 /* 画像処理 */
-.wp-block-create-block-lw-soromangablock .frame .serif img{
+.wp-block-create-block-lw-soromanga-block .frame .serif img{
     position: absolute;
     top: 0;
     left: 0;
@@ -834,22 +834,22 @@
  * 会話用の指定
  *
  */
-.wp-block-create-block-lw-soromangablock .kaiwaframe{
+.wp-block-create-block-lw-soromanga-block .kaiwaframe{
     width: 100%;
-    border:solid 0.5mm #555;
-    margin-bottom: 3.5mm;
-    /* height: 37mm; */
+    border:solid 2px #555;
+    margin-bottom: 16px;
+    /* height: 168px; */
     position: relative;
-    font-size: 13q;
-    line-height: 20q;
-    padding: 2mm 2mm 0 2mm;
+    font-size: 15px;
+    line-height: 23px;
+    padding: 9px 9px 0 9px;
     /* background: #EEE; */
 }
-.wp-block-create-block-lw-soromangablock .kaiwaframe .figure{
-    margin-top: 2mm;
-    margin-bottom: 2mm;
+.wp-block-create-block-lw-soromanga-block .kaiwaframe .figure{
+    margin-top: 9px;
+    margin-bottom: 9px;
 }
-.wp-block-create-block-lw-soromangablock .kaiwa{
+.wp-block-create-block-lw-soromanga-block .kaiwa{
     overflow: visible;
     text-align: left;
     max-width: 74%;
@@ -858,211 +858,211 @@
     /* background: #FFF; */
     text-indent: 0;
     position: relative;
-    margin-bottom: 3mm;
+    margin-bottom: 14px;
     break-inside: avoid;
     text-align: justify;
 }
 /* .kaiwa+:not(.kaiwa){
-    margin-top: 6mm;
+    margin-top: 27px;
 } */
-.wp-block-create-block-lw-soromangablock .kaiwaborder{
+.wp-block-create-block-lw-soromanga-block .kaiwaborder{
     /* 囲みを.kaiwaの内側のspanに設定し、文字量が少ないときに可変を実現する */
-    border: solid 0.3mm #888;
-    border-radius: 6mm;
-    padding: 1.5mm 4mm;
+    border: solid 1px #888;
+    border-radius: 27px;
+    padding: 7px 18px;
     display: inline-block;
     background: #FFF;
 }
-.wp-block-create-block-lw-soromangablock .kaiwa::before{
+.wp-block-create-block-lw-soromanga-block .kaiwa::before{
     clear: both;
     content: "";
     display: block;
 }
 
 p.kaiwa{
-    font-size: 13q;
-    line-height: 20q;
+    font-size: 15px;
+    line-height: 23px;
     font-family: notosans-r;
 }
-.wp-block-create-block-lw-soromangablock .kaiwa.yuki{
-    margin-left: 15mm;
+.wp-block-create-block-lw-soromanga-block .kaiwa.yuki{
+    margin-left: 68px;
 }
-.wp-block-create-block-lw-soromangablock .kaiwa.yuki .kaiwaborder{
+.wp-block-create-block-lw-soromanga-block .kaiwa.yuki .kaiwaborder{
     background: #EEE;
 }
-.wp-block-create-block-lw-soromangablock .kaiwa.alice{
-    margin-left: 15mm;
+.wp-block-create-block-lw-soromanga-block .kaiwa.alice{
+    margin-left: 68px;
     text-align: right;
 }
 /* 吹き出しの尻尾 */
-.wp-block-create-block-lw-soromangablock .kaiwa.yuki::before{
+.wp-block-create-block-lw-soromanga-block .kaiwa.yuki::before{
     content: "";
     background: url("img/kaiwa_face/fukidasi_kl.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 5mm;
-    height: 3mm;
+    width: 23px;
+    height: 14px;
     display: block;
     position: absolute;
-    left: -2mm;
-    bottom: 1mm;
+    left: -9px;
+    bottom: 5px;
     z-index: 100;
 }
-.wp-block-create-block-lw-soromangablock .kaiwa.alice::before{
+.wp-block-create-block-lw-soromanga-block .kaiwa.alice::before{
     content: "";
     background: url("img/kaiwa_face/fukidasi_kr.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 5mm;
-    height: 3mm;
+    width: 23px;
+    height: 14px;
     display: block;
     position: absolute;
-    right: -2.5mm;
-    bottom: 0.8mm;
+    right: -11px;
+    bottom: 4px;
     z-index: 100;
 }
 /* .kaiwa code{
     font-family: inconsolata, "ＭＳ ゴシック";
 } */
-.wp-block-create-block-lw-soromangablock .kaiwa.migiyose{
+.wp-block-create-block-lw-soromanga-block .kaiwa.migiyose{
     text-align: right;
 }
-.wp-block-create-block-lw-soromangablock .kaiwa.hidariyose{
+.wp-block-create-block-lw-soromanga-block .kaiwa.hidariyose{
     text-align: justify;
 }
 
 
-.wp-block-create-block-lw-soromangablock .kaiwa::after{
-    width: 20.8mm;
-    height: 16mm;
+.wp-block-create-block-lw-soromanga-block .kaiwa::after{
+    width: 94px;
+    height: 73px;
     position: absolute;
-    bottom: -1.5mm;
+    bottom: -7px;
 }
 
 /* アリス表情 */
-.wp-block-create-block-lw-soromangablock .kaiwa.namida::after{
+.wp-block-create-block-lw-soromanga-block .kaiwa.namida::after{
     content: "";
     background: url("img/kaiwa_face/chara1-1.png");
     background-repeat: no-repeat;
     background-size: contain;
-    right: -19mm;
+    right: -86px;
 }
-.wp-block-create-block-lw-soromangablock .kaiwa.shibu::after{
+.wp-block-create-block-lw-soromanga-block .kaiwa.shibu::after{
     content: "";
     background: url("img/kaiwa_face/chara1-2.png");
     background-repeat: no-repeat;
     background-size: contain;
-    right: -19mm;
+    right: -86px;
 }
-.wp-block-create-block-lw-soromangablock .kaiwa.hatena::after{
+.wp-block-create-block-lw-soromanga-block .kaiwa.hatena::after{
     content: "";
     background: url("img/kaiwa_face/chara1-3.png");
     background-repeat: no-repeat;
     background-size: contain;
-    right: -19mm;
+    right: -86px;
 }
-.wp-block-create-block-lw-soromangablock .kaiwa.gyao::after{
+.wp-block-create-block-lw-soromanga-block .kaiwa.gyao::after{
     content: "";
     background: url("img/kaiwa_face/chara1-4.png");
     background-repeat: no-repeat;
     background-size: contain;
-    right: -19mm;
+    right: -86px;
 }
-.wp-block-create-block-lw-soromangablock .kaiwa.doya::after{
+.wp-block-create-block-lw-soromanga-block .kaiwa.doya::after{
     content: "";
     background: url("img/kaiwa_face/chara1-5.png");
     background-repeat: no-repeat;
     background-size: contain;
-    right: -19mm;
+    right: -86px;
 }
-.wp-block-create-block-lw-soromangablock .kaiwa.fuan::after{
+.wp-block-create-block-lw-soromanga-block .kaiwa.fuan::after{
     content: "";
     background: url("img/kaiwa_face/chara1-6.png");
     background-repeat: no-repeat;
     background-size: contain;
-    right: -19mm;
+    right: -86px;
 }
-.wp-block-create-block-lw-soromangablock .kaiwa.yatta::after{
+.wp-block-create-block-lw-soromanga-block .kaiwa.yatta::after{
     content: "";
     background: url("img/kaiwa_face/chara1-7.png");
     background-repeat: no-repeat;
     background-size: contain;
-    right: -19mm;
+    right: -86px;
 }
-.wp-block-create-block-lw-soromangablock .kaiwa.sumashi::after{
+.wp-block-create-block-lw-soromanga-block .kaiwa.sumashi::after{
     content: "";
     background: url("img/kaiwa_face/chara1-8.png");
     background-repeat: no-repeat;
     background-size: contain;
-    right: -19mm;
+    right: -86px;
 }
 
 /* 雪 */
-.wp-block-create-block-lw-soromangablock .kaiwa.jito::after{
+.wp-block-create-block-lw-soromanga-block .kaiwa.jito::after{
     content: "";
     background: url("img/kaiwa_face/chara2-1.png");
     background-repeat: no-repeat;
     background-size: contain;
-    left: -17.5mm;
+    left: -79px;
 }
-.wp-block-create-block-lw-soromangablock .kaiwa.shock::after{
+.wp-block-create-block-lw-soromanga-block .kaiwa.shock::after{
     content: "";
     background: url("img/kaiwa_face/chara2-2.png");
     background-repeat: no-repeat;
     background-size: contain;
-    left: -17.5mm;
+    left: -79px;
 }
-.wp-block-create-block-lw-soromangablock .kaiwa.anone::after{
+.wp-block-create-block-lw-soromanga-block .kaiwa.anone::after{
     content: "";
     background: url("img/kaiwa_face/chara2-3.png");
     background-repeat: no-repeat;
     background-size: contain;
-    left: -17.5mm;
+    left: -79px;
 }
-.wp-block-create-block-lw-soromangablock .kaiwa.kohon::after{
+.wp-block-create-block-lw-soromanga-block .kaiwa.kohon::after{
     content: "";
     background: url("img/kaiwa_face/chara2-4.png");
     background-repeat: no-repeat;
     background-size: contain;
-    left: -17.5mm;
+    left: -79px;
 }
-.wp-block-create-block-lw-soromangablock .kaiwa.gohoubi::after{
+.wp-block-create-block-lw-soromanga-block .kaiwa.gohoubi::after{
     content: "";
     background: url("img/kaiwa_face/chara2-5.png");
     background-repeat: no-repeat;
     background-size: contain;
-    left: -17.5mm;
+    left: -79px;
 }
-.wp-block-create-block-lw-soromangablock .kaiwa.iyada::after{
+.wp-block-create-block-lw-soromanga-block .kaiwa.iyada::after{
     content: "";
     background: url("img/kaiwa_face/chara2-6.png");
     background-repeat: no-repeat;
     background-size: contain;
-    left: -17.5mm;
+    left: -79px;
 }
-.wp-block-create-block-lw-soromangablock .kaiwa.soreda::after{
+.wp-block-create-block-lw-soromanga-block .kaiwa.soreda::after{
     content: "";
     background: url("img/kaiwa_face/chara2-7.png");
     background-repeat: no-repeat;
     background-size: contain;
-    left: -17.5mm;
+    left: -79px;
 }
-.wp-block-create-block-lw-soromangablock .kaiwa.desuyo::after{
+.wp-block-create-block-lw-soromanga-block .kaiwa.desuyo::after{
     content: "";
     background: url("img/kaiwa_face/chara2-8.png");
     background-repeat: no-repeat;
     background-size: contain;
-    left: -17.5mm;
+    left: -79px;
 }
 
 /* 格好の悪い微調整 */
 /* 微妙に吹き出しのシッポが刺さるときに使う */
-.wp-block-create-block-lw-soromangablock .yuki.kwrs::before{
-    left: -1.6mm; !important;
-    bottom: 0.5mm;
+.wp-block-create-block-lw-soromanga-block .yuki.kwrs::before{
+    left: -7px; !important;
+    bottom: 2px;
 }
 /* アリスの会話枠を半分にする */
-.wp-block-create-block-lw-soromangablock .alice.kwhf{
+.wp-block-create-block-lw-soromanga-block .alice.kwhf{
     width:50%;
-    margin-left: 41mm;
+    margin-left: 186px;
 }
