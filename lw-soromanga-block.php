@@ -48,17 +48,9 @@ $replacelist = [
 		"r" => "</div></div>"
 	],
 	[
-		"f" => "/〘/u",
-		"r" => "<kbd>"
+		"f" => "/!\[(.*?)\]\((.*?)\)/u",
+		"r" => '<img alt="$1" src="$2">'
 	],
-	[
-		 "f" => "/〙/u",
-		 "r" => "</kbd>"
-	],
-	// [
-	// 	"f" => "/$＃/u",
-	// 	"r" => "<p class=\"serif2\">"
-	// ],
 	[
 		"f" => "/【センセ(.*?)】(.*)/u",
 		"r" => '<p class="kaiwa yuki $1"><span class="kaiwaborder">$2</span></p>'

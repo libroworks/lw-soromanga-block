@@ -5,6 +5,7 @@
  */
 import { __ } from '@wordpress/i18n';
 import { useState } from '@wordpress/element';
+import { RawHTML } from '@wordpress/element';
 
 /**
  * React hook that is used to mark the block wrapper element.
@@ -68,63 +69,84 @@ export default function Edit({ attributes, setAttributes, isSelected }) {
 		];
 	}, []);
 
+	function convert_manga(content) {
+		const replist = [
+			{
+				"f": "===[=]*",
+				"r": '<div class="manga_container">'
+			},
+			{
+				"f": "@divend",
+				"r": "</div>"
+			},
+			{
+				"f": "@frame:([a-z|0-9 ]+)",
+				"r": '<div class="frame $1"><div class="serif">'
+			},
+			{
+				"f": "@fend",
+				"r": "</div></div>"
+			},
+			{
+				"f": "@センセ「([a-z|0-9 ]+)",
+				"r": "@「yuki $1"
+			},
+			{
+				"f": "@デシ「([a-z|0-9 ]+)",
+				"r": "@「alice $1"
+			},
+			{
+				"f": "@「([a-z|0-9 ]+)",
+				"r": '<div class="frame $1"><div class="serif">'
+			},
+			{
+				"f": "@」",
+				"r": "</div></div>"
+			},
+			{
+				"f": "!\\[(.*?)\\]\\((.*?)\\)",
+				"r": '<img alt="$1" src="$2">'
+			},
+			{
+				"f": "【センセ(.*?)】(.*)",
+				"r": '<p class="kaiwa yuki $1"><span class="kaiwaborder">$2</span></p>'
+			},
+			{
+				"f": "【デシ(.*?)】(.*)",
+				"r": '<p class="kaiwa alice $1"><span class="kaiwaborder">$2</span></p>'
+			},
+		];
 
-	function switchToPreview() {
-		setIsPreview(true);
-	}
-
-	function switchToHTML() {
-		setIsPreview(false);
+		content = content.replace(/</g, '&lt;');
+		content = content.replace(/>/g, '&gt;');
+		content = content.replace(/\n\r/g, '\n');
+		content = content.replace(/\r/g, '\n');
+		const lcontent = content.split('\n');
+		for (const repitem of replist) {
+			for (let i = 0; i < lcontent.length; i++) {
+				lcontent[i] = lcontent[i].replace(new RegExp(repitem.f, 'g'), repitem.r);
+			}
+		}
+		content = lcontent.join('\n');
+		return (content);
 	}
 
 	return (
 		<div {...useBlockProps()}>
-			<BlockControls>
-				<ToolbarGroup>
-					<ToolbarButton
-						className="components-tab-button"
-						isPressed={!isPreview}
-						onClick={switchToHTML}
-					>
-						<span>SRC</span>
-					</ToolbarButton>
-					<ToolbarButton
-						className="components-tab-button"
-						isPressed={isPreview}
-						onClick={switchToPreview}
-					>
-						<span>Preview</span>
-					</ToolbarButton>
-				</ToolbarGroup>
-			</BlockControls>
-			<Disabled.Consumer>
-				{(isDisabled) =>
-					isPreview || isDisabled ? (
-						<>
-							<SandBox
-								html={attributes.message}
-							/>
-							{ /*	
-								An overlay is added when the block is not selected in order to register click events. 
-								Some browsers do not bubble up the clicks from the sandboxed iframe, which makes it 
-								difficult to reselect the block. 
-							*/ }
-							{!isSelected && (
-								<div className="block-library-html__preview-overlay"></div>
-							)}
-						</>
-					) : (
-						<PlainText
-							value={attributes.message}
-							onChange={(val) =>
-								setAttributes({ message: val })
-							}
-							placeholder={__('Write Text')}
-							aria-label={__('HTML')}
-						/>
-					)
+			{ attributes.message && isSelected ? (
+				<RawHTML class="soromaga_preview">
+					{convert_manga(attributes.message)}
+				</RawHTML>
+			) : (<span></span>)}
+			<PlainText
+				value={attributes.message}
+				onChange={(val) => {
+					setAttributes({ message: val });
 				}
-			</Disabled.Consumer>
+				}
+				placeholder={__('Write Text')}
+				aria-label={__('HTML')}
+			/>
 		</div>
 	);
 }
