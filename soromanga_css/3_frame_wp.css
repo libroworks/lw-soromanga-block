@@ -5,6 +5,7 @@
 .wp-block-create-block-lw-soromanga-block{
     width: 531px;
     margin: 18px auto;
+    transform-origin: left top;
 }
 
 /* コマのコンテナ */
@@ -68,6 +69,10 @@
     font-size: 15px;
     line-height: 23px;
 }
+.soromanga_container .frame:hover{
+    transform: scale(1);
+}
+
 /* スリムサイズ1/3 */
 .soromanga_container .fslim{
     width: 168px;
@@ -605,7 +610,7 @@
 
 .wp-block-create-block-lw-soromanga-block .frame.yuki .serif2{
     left: auto;
-    right: 136px;
+    right: 144px;
     text-align: right;
 }
 .wp-block-create-block-lw-soromanga-block .starting .serif2{
@@ -652,7 +657,7 @@
     position: absolute;
     width: 181px;
     height: 27px;
-    top: 136px;
+    top: 146px;
     left: -367px;
     text-align: left;
     margin: 0;
@@ -690,10 +695,10 @@
 .wp-block-create-block-lw-soromanga-block .fright .serif{
     border: none;
     position: absolute;
-    width: 136px;
+    width: 146px;
     height: 27px;
-    top: 136px;
-    right: 136px;
+    top: 146px;
+    right: 146px;
     margin: 0;
     padding: 0;
     background: none;
@@ -827,7 +832,38 @@
     position: absolute;
     top: 0;
     left: 0;
+    /* z-index: -1; */
 }
+
+/* 袋文字 */
+.fukuromoji{
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    height: 150px;
+    width: 58%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fukurochild{
+    text-align: center;
+    font-size: 30px;
+    color: #FFF;
+    letter-spacing: 2px;
+    line-height: 36px;
+    font-weight: bold;
+    text-shadow:
+     2px  2px 1px #444,
+    -2px  2px 1px #444,
+     2px -2px 1px #444,
+    -2px -2px 1px #444,
+     2px  0px 1px #444,
+     0px  2px 1px #444,
+    -2px  0px 1px #444,
+     0px -2px 1px #444;        /* 文字の影 */
+}
+
 
 /*
  *
@@ -1065,4 +1101,36 @@ p.kaiwa{
 .wp-block-create-block-lw-soromanga-block .alice.kwhf{
     width:50%;
     margin-left: 186px;
+}
+
+
+@media screen and (max-width: 415px) {
+    .wp-block-create-block-lw-soromanga-block{
+        transform: scale(0.72);
+    }
+}
+@media screen and (max-width: 412px) {
+    .wp-block-create-block-lw-soromanga-block{
+        transform: scale(0.71);
+    }
+}
+@media screen and (max-width: 376px) {
+    .wp-block-create-block-lw-soromanga-block{
+        transform: scale(0.64);
+    }
+}
+@media screen and (max-width: 361px) {
+    .wp-block-create-block-lw-soromanga-block{
+        transform: scale(0.6);
+    }
+}
+@media screen and (max-width: 320px) {
+    .wp-block-create-block-lw-soromanga-block{
+        transform: scale(0.54);
+    }
+}
+@media screen and (max-width: 279px) {
+    .wp-block-create-block-lw-soromanga-block{
+        transform: scale(0.465);
+    }
 }
