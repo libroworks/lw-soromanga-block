@@ -4,7 +4,7 @@
 	"title": "Lw Soromanga Block",
 	"category": "widgets",
 	"icon": "smiley",
-	"description": "Example block written with ESNext standard and JSX support – build step required.",
+	"description": "そろマンガブロック",
 	"supports": {
 		"html": false
 	},

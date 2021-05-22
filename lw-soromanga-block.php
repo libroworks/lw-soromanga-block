@@ -24,7 +24,7 @@ $replacelist = [
 		"r" => "</div>"
 	],
 	[
-		"f" => "/@frame:([a-z|0-9 ]+)/u",
+		"f" => "/@frame:([\w\- ]+)/u",
 		"r" => '<div class="frame $1"><div class="serif">'
 	],
 	[
@@ -32,20 +32,28 @@ $replacelist = [
 		"r" => "</div></div>"
 	],
 	[
-		"f" => "/@センセ「([a-z|0-9 ]+)/u",
+		"f" => "/@センセ「([\w\- ]+)/u",
 		"r" => "@「yuki $1"
 	],
 	[
-		"f" => "/@デシ「([a-z|0-9 ]+)/u",
+		"f" => "/@デシ「([\w\- ]+)/u",
 		"r" => "@「alice $1"
 	],
 	[
-		"f" => "/@「([a-z|0-9 ]+)/u",
+		"f" => "/@「([\w\- ]+)/u",
 		"r" => '<div class="frame $1"><div class="serif">'
 	],
 	[
 		"f" => "/@」/u",
 		"r" => "</div></div>"
+	],
+	[
+		"f" => "/&lt;br>/",
+		"r" => "<br>"
+	],
+	[
+		"f" => "/@o:(.*)/",
+		"r" => '<div class="fukuromoji"><div class="fukurochild">$1</div></div>'
 	],
 	[
 		"f" => "/!\[(.*?)\]\((.*?)\)/u",

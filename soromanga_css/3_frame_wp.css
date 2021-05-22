@@ -838,13 +838,16 @@
 /* 袋文字 */
 .fukuromoji{
     position: absolute;
-    top: 50px;
+    top: 70px;
     left: 10px;
-    height: 150px;
-    width: 58%;
+    height: 136px;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.fwide .fukuromoji{
+    width: 58%;
 }
 .fukurochild{
     text-align: center;
