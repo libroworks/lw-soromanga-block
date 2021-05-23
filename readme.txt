@@ -1,3 +1,6 @@
+とりあえずの紹介記事
+https://libroworks.co.jp/?p=3794
+
 === Lw Soromanga Block ===
 Contributors:      The WordPress Contributors
 Tags:              block
