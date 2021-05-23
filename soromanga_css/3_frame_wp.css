@@ -1107,9 +1107,12 @@ p.kaiwa{
 }
 
 
+/* モバイル用メディアクエリー */
+
 @media screen and (max-width: 415px) {
     .wp-block-create-block-lw-soromanga-block{
         transform: scale(0.72);
+        margin-bottom: -100px;
     }
 }
 @media screen and (max-width: 412px) {
