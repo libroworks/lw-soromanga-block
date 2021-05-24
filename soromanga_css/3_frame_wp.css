@@ -21,7 +21,7 @@
     /*縦に伸ばさない*/
     flex-wrap: wrap;
     /* margin: 18px auto; */
-    margin-bottom: 36px;
+    /* margin-bottom: 36px; */
     justify-content: space-between;
     font-size: 15px;
     line-height: 23px;
@@ -679,7 +679,7 @@
 }
 
 .wp-block-create-block-lw-soromanga-block .fwide+.fleft .serif{
-    left: -222px;
+    left: -238px;
 }
 
 /* 右に雪を配置 */
@@ -1112,7 +1112,7 @@ p.kaiwa{
 @media screen and (max-width: 415px) {
     .wp-block-create-block-lw-soromanga-block{
         transform: scale(0.72);
-        margin-bottom: -100px;
+        /* margin-bottom: -100px; */
     }
 }
 @media screen and (max-width: 412px) {
