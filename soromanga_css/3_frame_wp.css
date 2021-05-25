@@ -1099,7 +1099,7 @@ p.kaiwa{
     .wp-block-create-block-lw-soromanga-block .fwide .serif{
         width: 100%;
     }
-    ..wp-block-create-block-lw-soromanga-block .kaiwa.alice{
-        width: 20px;
+    .wp-block-create-block-lw-soromanga-block .kaiwa.alice{
+        margin-left: 20px;
     }
 }
