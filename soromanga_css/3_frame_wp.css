@@ -26,32 +26,9 @@
     font-size: 15px;
     line-height: 23px;
     width: 531px;
-
-    /* transform-origin: top; */
-    /* transform: scale(1.2); */
-    /* transition: transform 0.5s; */
 }
 
-/* @media screen and (min-width:769px) { */
-    /*　画面サイズ769px以上　*/
-    /* .soromanga_container{
-        transform-origin: top;
-        transform: scale(1.2);
-        margin-bottom: 109px;
-    }
-} */
-/* @media screen and (max-width:420px) { */
-    /*　画面サイズ 420px以下　*/
-    /* .soromanga_container{
-        transform-origin: left top;
-        transform: scale(0.7); */
-        /* width: 100%; */
-        /* margin-bottom: -127px;
-    }
-} */
 
-/* .soromanga_container:hover{
-} */
 .soromanga_container *{
     box-sizing: border-box;
     margin: 0;
@@ -1109,34 +1086,20 @@ p.kaiwa{
 
 /* モバイル用メディアクエリー */
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 530px) {
     .wp-block-create-block-lw-soromanga-block{
-        transform: scale(0.72);
-        /* margin-bottom: -100px; */
+        width: 100%;
     }
-}
-@media screen and (max-width: 412px) {
-    .wp-block-create-block-lw-soromanga-block{
-        transform: scale(0.71);
+    .soromanga_container{
+        width: 100%;
     }
-}
-@media screen and (max-width: 376px) {
-    .wp-block-create-block-lw-soromanga-block{
-        transform: scale(0.64);
+    .wp-block-create-block-lw-soromanga-block .ffull .serif{
+        width: 100%;
     }
-}
-@media screen and (max-width: 361px) {
-    .wp-block-create-block-lw-soromanga-block{
-        transform: scale(0.6);
+    .wp-block-create-block-lw-soromanga-block .fwide .serif{
+        width: 100%;
     }
-}
-@media screen and (max-width: 320px) {
-    .wp-block-create-block-lw-soromanga-block{
-        transform: scale(0.54);
-    }
-}
-@media screen and (max-width: 279px) {
-    .wp-block-create-block-lw-soromanga-block{
-        transform: scale(0.465);
+    ..wp-block-create-block-lw-soromanga-block .kaiwa.alice{
+        width: 20px;
     }
 }
