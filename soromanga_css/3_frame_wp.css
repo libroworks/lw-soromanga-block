@@ -1091,15 +1091,78 @@ p.kaiwa{
         width: 100%;
     }
     .soromanga_container{
+        justify-content: center;
         width: 100%;
+    }
+    .wp-block-create-block-lw-soromanga-block .frame{
+        margin-bottom: 80px;
     }
     .wp-block-create-block-lw-soromanga-block .ffull .serif{
         width: 100%;
+    }
+    .wp-block-create-block-lw-soromanga-block .fwide{
+        width: 80%;
     }
     .wp-block-create-block-lw-soromanga-block .fwide .serif{
         width: 100%;
     }
     .wp-block-create-block-lw-soromanga-block .kaiwa.alice{
         margin-left: 20px;
+    }
+    .wp-block-create-block-lw-soromanga-block .fleft{
+        width: 168px;
+        height: 130px;
+        left: 0;
+        position: relative;
+        margin-right: 100px;
+        margin-top: -120px;
+        margin-bottom: 80px;
+    }
+    .wp-block-create-block-lw-soromanga-block .ffull+.fleft{
+        margin-right: 100px;
+    }
+    .wp-block-create-block-lw-soromanga-block .fwide+.fleft{
+        margin-right: 100px;
+    }
+    .wp-block-create-block-lw-soromanga-block .frame.fleft::after{
+        left: 0;
+    }
+    .wp-block-create-block-lw-soromanga-block .fleft .serif{
+        left:130px;
+        top: 100px;
+        width: 50%;
+    }
+    .wp-block-create-block-lw-soromanga-block .fwide+.fleft .serif{
+        left: 130px;
+    }
+    .wp-block-create-block-lw-soromanga-block .fright{
+        width: 168px;
+        height: 130px;
+        left: 0;
+        position: relative;
+        margin-left: 100px;
+        margin-top: -120px;
+        margin-bottom: 80px;
+    }
+    .wp-block-create-block-lw-soromanga-block .ffull+.fright{
+        margin-left: 100px;
+    }
+    .wp-block-create-block-lw-soromanga-block .fwide+.fright{
+        margin-left: 100px;
+    }
+    .wp-block-create-block-lw-soromanga-block .fright::after{
+        left:0;
+    }
+    .wp-block-create-block-lw-soromanga-block .fright .serif{
+        left:-70px;
+        width: 50%;
+        top: 100px;
+    }
+
+    .wp-block-create-block-lw-soromanga-block .kaiwa.alice{
+        text-align: left;
+    }
+    .wp-block-create-block-lw-soromanga-block .alice .kaiwaborder{
+        width: 100%;
     }
 }
